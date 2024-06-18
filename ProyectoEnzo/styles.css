@@ -6,6 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 body{
   background-color: #6c507c;
 }
@@ -39,13 +43,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 38px;
-    font-family: "Cactus Classical Serif", serif;
-}
+    height: 30px;
+    font-family: "Red Hat Display", sans-serif;
+  }
 
 .pe{
     font-size: 12px;
     margin-left: 0px;
+    font-family: "Red Hat Display", sans-serif;
 }
 
 .nav-item{
@@ -79,27 +84,9 @@ body{
   filter: brightness(30%);
 }
 
-.custom-button {
-  border-radius: 30px; /* Bordes redondeados */
-  background-color: transparent; /* Fondo transparente */
-  color: white; /* Texto en color blanco */
-  border: 2px solid white; /* Borde de 2px sólido blanco */
-  padding: 7.5px 15px; /* Espaciado interno */
-  cursor: pointer; /* Cursor de apuntador */
-  transition: background-color 0.3s, color 0.3s; /* Transición suave */
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 60px;
-}
-
 .custom-button:hover {
   background-color: white; /* Fondo blanco al pasar el mouse */
   color: black; /* Texto en negro al pasar el mouse */
-}
-
-.info{
-  margin-bottom: 40px;
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
 }
 
 .informacion{
@@ -111,7 +98,11 @@ body{
 }
 
 .title{
-  font-size: 28px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
   color: white;
   font-family: "Chocolate Classical Sans", sans-serif;
   margin-bottom: 12.5px;
@@ -125,4 +116,49 @@ body{
   flex-direction: column;
   display: flex;
   text-align: center;
+}
+
+.info{
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-button {
+  border-radius: 30px; /* Bordes redondeados */
+  background-color: transparent; /* Fondo transparente */
+  color: white; /* Texto en color blanco */
+  border: 2px solid white; /* Borde de 2px sólido blanco */
+  padding: 7.5px 15px; /* Espaciado interno */
+  cursor: pointer; /* Cursor de apuntador */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 60px;
+}
+
+.cuadrosInfo{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.cuadro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.foto{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.textoCuadro{
+  font-size: 20px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
 }
