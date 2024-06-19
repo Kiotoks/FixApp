@@ -10,8 +10,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 body{
-  background-color: #57495f;
+  background-color: #786980;
 }
 
 .btn-primary{
@@ -27,7 +31,7 @@ body{
 }
 
 .navbar {
-  background-color: #460472; /* Púrpura-800 de Bootstrap */
+  background-color: #37134e; /* Púrpura-800 de Bootstrap */
 }
 
 .navbar-brand{
@@ -44,7 +48,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 30px;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Roboto Slab", serif;
   }
 
 .pe{
@@ -73,7 +77,7 @@ body{
 }
 
 .navbar-nav .nav-link.clicked{
-  border-bottom: 2.5px solid rgb(197, 122, 240);
+  border-bottom: 2.5px solid rgb(187, 141, 214);
 }
 
 .carousel-item img {
@@ -136,6 +140,9 @@ body{
 
 .cuadrosInfo{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   flex-direction: row;
   margin-top: 50px;
 }
@@ -156,9 +163,14 @@ body{
 }
 
 .textoCuadro{
-  font-size: 20px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   color: white;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .dropdown-item:hover{
