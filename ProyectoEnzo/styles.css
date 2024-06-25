@@ -35,26 +35,26 @@ body{
 }
 
 .navbar-brand{
-    font-size: 25px;
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-    margin-bottom: 0px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 .textoPrinc{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    font-family: "Roboto Slab", serif;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-family: "Roboto Slab", serif;
+}
 
 .pe{
-    font-size: 12px;
-    margin-left: 0px;
-    font-family: "Red Hat Display", sans-serif;
+  font-size: 12px;
+  margin-left: 0px;
+  font-family: "Roboto Slab", serif;
 }
 
 .nav-item{
@@ -62,11 +62,23 @@ body{
 }
 
 #carouselExampleControls img {
-    margin-top: 5px;
-    width: 100%;
-    height: auto;
-    max-height: 400px;
+  margin-top: 2px;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+
+@media (max-width: 600px){
+  #carouselExampleControls img {
+    max-height: 200px;
   }
+}
+
+@media (max-width: 770px){
+  .info{
+    font-size: auto;
+  }
+}
 
 .navbar-nav .nav-link {
   transition: border-color 0.5s ease;
@@ -179,4 +191,14 @@ body{
   transition: color 0.7s ease;
   transition: background-color 0.7s ease;
   border-radius: 5px;
+}
+
+.textoCuadro{
+  opacity: 0;
+  transition: opacity 100s ease, transform 1s ease;
+}
+
+.cuadro:hover .textoCuadro{
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 1s ease;
 }
