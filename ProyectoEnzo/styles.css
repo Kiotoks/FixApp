@@ -15,7 +15,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 body{
-  background-color: #786980;
+  background-color: #5e4969;
 }
 
 .btn-primary{
@@ -74,12 +74,6 @@ body{
   }
 }
 
-@media (max-width: 770px){
-  .info{
-    font-size: auto;
-  }
-}
-
 .navbar-nav .nav-link {
   transition: border-color 0.5s ease;
 }
@@ -96,11 +90,6 @@ body{
   object-fit: cover;
   height: 100%;
   filter: brightness(30%);
-}
-
-.custom-button:hover {
-  background-color: white; /* Fondo blanco al pasar el mouse */
-  color: black; /* Texto en negro al pasar el mouse */
 }
 
 .informacion{
@@ -193,12 +182,88 @@ body{
   border-radius: 5px;
 }
 
-.textoCuadro{
-  opacity: 0;
-  transition: opacity 100s ease, transform 1s ease;
+@keyframes aparecer{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity 1;
+  }
 }
 
-.cuadro:hover .textoCuadro{
-  opacity: 1;
-  transition: opacity 0.5s ease, transform 1s ease;
+.cuadro img{
+  animation: aparecer 3s 1; 
+}
+
+.cuadro h2{
+  animation: aparecer 3s 1; 
+}
+
+@keyframes desplegarMenu{
+  from{
+    max-height: 0;
+    opacity: 0;
+  }
+  to{
+    max-height: 110px;
+    opacity: 1;
+  }
+}
+
+@keyframes cerrarMenu {
+  from {
+    max-height: 110px;
+    opacity: 1; 
+  }
+  to {
+    max-height: 0; 
+    opacity: 0; 
+  }
+}
+
+.dropdown-menu {
+  overflow: hidden; 
+  transition: max-height 0.5s ease, opacity 0.5s ease; 
+  animation: desplegarMenu 0.5s forwards; 
+  animation-duration: 0.8s;
+}
+
+.info{
+  overflow: hidden; 
+  transition: opacity 3s ease; 
+  animation: aparecer 3s forwards; 
+  animation-duration: 3s;
+}
+
+.btn{
+  overflow: hidden; 
+  transition: opacity 3s ease;
+  animation: aparecer 3s forwards; 
+  animation-duration: 3s;
+}
+
+.custom-button {
+  position: relative; /* Asegura que los pseudo-elementos se posicionen correctamente */
+  overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+  transition: color 1s ease;
+}
+
+.custom-button::after {
+  content: ''; /* Crea un pseudo-elemento vacío */
+  position: absolute; /* Lo posiciona de manera absoluta dentro del botón */
+  top: 0;
+  left: 0;
+  width: 0; /* Inicialmente tiene ancho cero */
+  height: 100%;
+  background-color: white; /* Color de fondo blanco */
+  z-index: -1; /* Asegura que esté detrás del texto del botón */
+  transition: width 1s ease; /* Transición para el ancho */
+}
+
+.custom-button:hover::after {
+  width: 100%; /* Aumenta el ancho al 100% cuando se pasa el mouse por encima */
+}
+
+.custom-button:hover {
+  color: black;
 }
