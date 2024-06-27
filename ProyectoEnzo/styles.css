@@ -68,12 +68,6 @@ body{
   max-height: 400px;
 }
 
-@media (max-width: 600px){
-  #carouselExampleControls img {
-    max-height: 200px;
-  }
-}
-
 .navbar-nav .nav-link {
   transition: border-color 0.5s ease;
 }
@@ -266,4 +260,35 @@ body{
 
 .custom-button:hover {
   color: black;
+}
+
+@media (max-width: 600px){
+  #carouselExampleControls img {
+    max-height: 200px;
+  }
+  .cuadro img{
+    margin-right: 20px;
+  }
+  .cuadro{
+    display: flex;
+    flex-direction: row;
+  }
+  #foto1{
+    margin-right: 27px;
+  }
+  #foto2{
+    margin-right: 40px;
+  }
+  #foto4{
+    margin-right: 33px;
+  }
+  #texto1{
+    margin-right: 6px;
+  }
+  #texto2{
+    margin-right: 25px;
+  }
+  #texto4{
+    margin-right: 7px;
+  }
 }
