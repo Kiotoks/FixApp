@@ -36,13 +36,13 @@
               Soporte Técnico <span class="caret"></span>
             </a>
             <div class="dropdown-menu lilaClarito" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="arreglo.html">Arreglo</a>
-              <a class="dropdown-item" href="limpieza.html">Limpieza</a>
-              <a class="dropdown-item" href="asesoramiento.html">Asesoramiento</a>
+                <a class="dropdown-item" href="arreglo.html">Arreglo</a>
+                <a class="dropdown-item" href="limpieza.html">Limpieza</a>
+                <a class="dropdown-item" href="asesoramiento.html">Asesoramiento</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link clicked" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -54,14 +54,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    $(document).ready(function () {
-      $('.navbar-nav .nav-link').click(function () {
-        // Quita la clase 'clicked' de todos los enlaces
-        $('.navbar-nav .nav-link').removeClass('clicked');
-        // Agrega la clase 'clicked' solo al enlace clicado
-        $(this).addClass('clicked');
+      $(document).ready(function () {
+        $('.navbar-nav .nav-link').click(function () {
+          // Quita la clase 'clicked' de todos los enlaces
+          $('.navbar-nav .nav-link').removeClass('clicked');
+          // Agrega la clase 'clicked' solo al enlace clicado
+          $(this).addClass('clicked');
+        });
       });
-    });
 </script>
 </body>
 </html>

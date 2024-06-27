@@ -31,7 +31,7 @@ body{
 }
 
 .navbar {
-  background-color: #37134e; /* Púrpura-800 de Bootstrap */
+  background-color: #37134e;
 }
 
 .navbar-brand{
@@ -117,7 +117,7 @@ body{
 
 .info{
   margin-bottom: 40px;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -125,7 +125,7 @@ body{
   border-radius: 30px; /* Bordes redondeados */
   background-color: transparent; /* Fondo transparente */
   color: white; /* Texto en color blanco */
-  border: 2px solid white; /* Borde de 2px sólido blanco */
+  border: 2px solid rgb(81, 135, 235); /* Borde de 2px sólido blanco */
   padding: 7.5px 15px; /* Espaciado interno */
   cursor: pointer; /* Cursor de apuntador */
   transition: background-color 0.3s, color 0.3s; /* Transición suave */
@@ -133,13 +133,16 @@ body{
   margin-bottom: 60px;
 }
 
-.cuadrosInfo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-direction: row;
-  margin-top: 50px;
+.custom-button {
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 7.5px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 60px;
 }
 
 .cuadro{
@@ -181,7 +184,7 @@ body{
     opacity: 0;
   }
   to{
-    opacity 1;
+    opacity: 1;
   }
 }
 
@@ -262,9 +265,16 @@ body{
   color: black;
 }
 
+.container{
+  margin-top: 50px;
+}
+
 @media (max-width: 600px){
   #carouselExampleControls img {
     max-height: 200px;
+  }
+  .container{
+    margin-top: 20px;
   }
   .cuadro img{
     margin-right: 20px;
@@ -291,4 +301,83 @@ body{
   #texto4{
     margin-right: 7px;
   }
+}
+
+.form-control{
+  width: 400px;
+  margin-left: 50px;
+}
+
+@media (max-width: 600px){
+  iframe{
+    width: 100%;
+    height: 150px;
+  }
+  .form-control{
+    width: 250px;
+  }
+}
+
+.formInfo{
+  margin-top: 30px;
+  overflow: hidden; 
+  transition: opacity 3s ease;
+  animation: aparecer 3s forwards; 
+  animation-duration: 3s;
+}
+
+.consulta{
+  font-size: 25px;
+  margin-left: 50px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden; 
+  transition: opacity 3s ease;
+  animation: aparecer 3s forwards; 
+  animation-duration: 3s;
+}
+
+.btn2{
+  overflow: hidden; 
+  transition: opacity 3s ease;
+  animation: aparecer 3s forwards; 
+  animation-duration: 3s;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+/* Estilo para el borde activo */
+.form-control:focus{
+  border-color: #000000; /* Color violeta oscuro */
+}
+
+.cuadrados{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.inputText{
+  margin-top: 50px;
+  width: 150px;
+}
+
+.contactanos{
+ font-size: 20px;
+}
+
+.contacto{
+  font-size: 15px;
+}
+
+.infoIzq{
+  margin-bottom: 250px;
+  color: white;
+}
+
+.mensaje{
+  margin-right: 150px;
 }
