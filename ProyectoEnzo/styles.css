@@ -306,6 +306,9 @@ body{
 .form-control{
   width: 400px;
   margin-left: 50px;
+  background-color: #5e4969;
+  font-size: 15px;
+  color: white;
 }
 
 @media (max-width: 600px){
@@ -344,11 +347,11 @@ body{
   animation-duration: 3s;
   margin-left: 150px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
-/* Estilo para el borde activo */
 .form-control:focus{
-  border-color: #000000; /* Color violeta oscuro */
+  border-color: #8c00ff;
 }
 
 .cuadrados{
@@ -358,8 +361,12 @@ body{
   justify-content: center;
   align-content: center;
   justify-items: center;
+  width: 100%;
 }
-
+.contenido{
+  display: flex;
+  flex-direction: row;
+}
 .inputText{
   margin-top: 50px;
   width: 150px;
@@ -374,10 +381,105 @@ body{
 }
 
 .infoIzq{
+  margin-top: 10px;
+  margin-left: 50px;
   margin-bottom: 250px;
+  margin-right: 0px;
   color: white;
+  overflow: hidden; 
+  transition: opacity 3s ease;
+  animation: aparecer 3s forwards; 
+  animation-duration: 3s;
+  font-family: "Poppins", sans-serif;
 }
 
 .mensaje{
-  margin-right: 150px;
+  margin-right: 0px;
+  margin-top: 92.5px;
+  overflow: hidden; 
+  transition: opacity 3s ease;
+  animation: aparecer 3s forwards; 
+  animation-duration: 3s;
+}
+
+.formInfo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+}
+
+.mensaje .form-control{
+  height: 160px;
+}
+
+.contactoFooter{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(62, 42, 78);
+}
+
+.informacionFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden; 
+  transition: opacity 3s ease;
+  animation: aparecer 3s forwards; 
+  animation-duration: 3s;
+}
+
+#foto3{
+  width: 50px;
+  height: 50px;
+}
+
+.mail{
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mail:hover{
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+@media (max-width:600px){
+  .mensaje{
+    margin-top: 10px;
+  }
+  .contactoFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .btn2{
+    margin-left: 75px;
+  }
+
+  .formInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .contenido{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
+  .consulta{
+    margin-right: 180px;
+  }
 }
