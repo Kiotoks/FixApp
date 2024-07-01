@@ -483,3 +483,8 @@ body{
     margin-right: 180px;
   }
 }
+
+.form-control:hover{
+  background-color: rgb(62, 1, 97);
+  transition: background-color 0.7s ease;
+}
