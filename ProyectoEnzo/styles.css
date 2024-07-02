@@ -483,3 +483,23 @@ body{
     margin-right: 180px;
   }
 }
+
+@keyframes movimiento{
+  from{
+    background-position: bottom left;
+  }
+  to{
+    background-position: top right;
+  }
+}
+
+.containerMovimiento{
+  width: 100%;
+  height: 400px;
+  animation: movimiento 15s;
+  background-image: url(./img/movimiento.jpg);
+  background-size: 200%;
+}
+.containerMovimiento::before{
+  animation: movimiento 15s reverse;
+}
