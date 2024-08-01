@@ -484,22 +484,50 @@ body{
   }
 }
 
-@keyframes movimiento{
-  from{
+@keyframes movimiento {
+  0% {
     background-position: bottom left;
   }
-  to{
+  50% {
     background-position: top right;
+  }
+  100% {
+    background-position: bottom left;
   }
 }
 
-.containerMovimiento{
+.containerMovimiento {
   width: 100%;
   height: 400px;
-  animation: movimiento 15s;
+  animation: movimiento 20s infinite;
   background-image: url(./img/movimiento.jpg);
-  background-size: 200%;
+  background-size: 100%;
+  filter: brightness(30%);
+  background-repeat: no-repeat;
 }
-.containerMovimiento::before{
-  animation: movimiento 15s reverse;
+
+.titulo{
+  color: white;
+}
+
+.titulo:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.infoNosotros{
+  background-image: url(./img/bg-01.png);
+  height: 100px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.textoNosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
